@@ -47,7 +47,7 @@ a { text-decoration: none; }
 
 .topo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
@@ -217,4 +217,47 @@ table {
     width: 80%;
     max-width: 600px;
     margin: auto;
+    /* remove o espaçamento entre as bordas */
+    border-collapse: collapse;
+}
+
+caption{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-bottom: 0.3rem;
+}
+
+th, td{
+    border: solid 1px var(--cor-escura);
+}
+
+th{
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 0.5rem;
+}
+
+td{
+    padding: 0.4rem;
+}
+
+/* selecionando os segundos <td> */
+td:nth-child(2){text-align: center;}
+
+td:last-child, th:last-child{text-align: right;}
+
+
+/* selecionando linhas alternadas. podemos usar even (ímpares) ou odd (pares) */
+tr:nth-child(even){
+    background-color: var(--cor-clara);
+}
+
+/* classe que  será aplicada em algumas partes do site visando criar limites 
+de tamanho.*/
+
+.limitador{
+    width: 95vw;
+    max-width: 1000px;
+    margin: auto;
+    background-color: yellow;
 }
