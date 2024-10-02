@@ -269,3 +269,45 @@ tr:nth-child(even){
 }
 
 
+.galeria{
+    gap: 3rem;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+    /* background-color: yellow; */
+}
+
+.galeria img{
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.galeria img:hover{
+    transform: scale(1.2) rotate(10deg);
+    transition: 0.8s;
+}
+
+@keyframes animagaleria {
+    /* Dê (como começa) */
+    from { 
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    /* Para (como termina) */
+    to { 
+        opacity: 1; 
+        transform: scale(1);
+    }
+}
+
+a img{
+    box-shadow: 13px 13px 44px #000;
+    color: var(--cor-clara);
+    animation-name: animagaleria;
+    animation-duration: 0.5s;
+    
+    /* Opções adicionais */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+}
+
