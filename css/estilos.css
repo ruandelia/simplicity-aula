@@ -50,6 +50,8 @@ a { text-decoration: none; }
     position: sticky;
     top: 0;
     background-color: var(--cor-clara);
+    /* fazendo o topo nao ser sobreposto por outros elementos. */
+    z-index: 10;
 }
 
 /* <div> com a classe limitador DENTRO do topo (sub-cabeçalho):aplicamos os ajustes de layout (flex) */
