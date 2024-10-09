@@ -314,6 +314,51 @@ a img{
     /* animation-direction: alternate; */
 }
 
+/* regras para formulario */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--cor-texto);
+}
+
+form, button{text-align: center;}
+
+form div{
+    margin-bottom: 1rem;
+}
+
+input, select, textarea{
+    width: 100%;
+    border: none;
+    padding: 6px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+textarea{ height: auto;}
+
+button{
+    border: none;
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 1.5s;
+    box-shadow: grey 0 0 10px 6px;
+}
+
+button:hover, button:focus {
+    background-color: darkblue;
+    cursor: pointer;
+    padding: 15px 200px;
+}
+
 /* regras condicionais usando media queries */
 
 @media screen and (min-width: 600px){
@@ -344,3 +389,4 @@ a img{
 /* aumentamos a altura da div.limitador contida no topo (header) */
     .topo .limitador{ height: 100px;}
 }
+
