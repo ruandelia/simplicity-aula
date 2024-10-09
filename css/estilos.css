@@ -314,3 +314,33 @@ a img{
     /* animation-direction: alternate; */
 }
 
+/* regras condicionais usando media queries */
+
+@media screen and (min-width: 600px){
+    .titulo-menu{display: none;}
+
+    /* exibindo links do menu */
+
+    .links-menu{
+        display: flex;
+}
+
+/* Ajustamos o tamanho do menu (nav) fazendo-o "esticar", aumentando o espaçamento dentro dele. */
+    .menu{
+        /* background-color: yellow; */
+        width: 60%;
+}
+
+/* forçamos cada item (li) da lista a ter largura total e,com isso, redistribuir e ocupar todos os espaços dentro do menu(nav) */
+    .links-menu li{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 1000px){
+    html{ font-size: 20px;}    
+
+/* aumentamos a altura da div.limitador contida no topo (header) */
+    .topo .limitador{ height: 100px;}
+}
